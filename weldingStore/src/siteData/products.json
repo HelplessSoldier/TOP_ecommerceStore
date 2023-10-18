@@ -1,12 +1,12 @@
 [
   {
     "id": "0001",
-    "name": "Flame Weaver Gloves",
+    "name": "Flame Weaver",
     "description": "Extreme heat and wear resistance gloves.",
     "productDetails": {
       "material": "Full-Grain leather with kevlar stitching",
       "lining": "Cotton with AeroGel insulation",
-      "madeIn": "Italy"
+      "madeIn": "Canada"
     },
     "imgSrc": "./images/productImages/gloves.jpeg"
   },
@@ -34,24 +34,24 @@
   },
   {
     "id": "0004",
-    "name": "",
-    "description": "",
+    "name": "Sun Gazer",
+    "description": "Light weight active dimming mask",
     "productDetails": {
-      "material": "",
-      "lining": "",
-      "madeIn": "Italy"
+      "material": "Forged carbon fiber",
+      "lining": "Suede padding",
+      "madeIn": "Canada"
     },
-    "imgSrc": "./images/productImages/"
+    "imgSrc": "./images/productImages/mask2.jpeg"
   },
   {
     "id": "0005",
-    "name": "",
-    "description": "",
+    "name": "Sabaton",
+    "description": "Reinforced boots",
     "productDetails": {
-      "material": "",
-      "lining": "",
+      "material": "Full-Grain leather with kevlar stitching and full length titanium reinforcement",
+      "lining": "Leather",
       "madeIn": "Italy"
     },
-    "imgSrc": "./images/productImages/"
+    "imgSrc": "./images/productImages/boots2.jpeg"
   }
 ]
