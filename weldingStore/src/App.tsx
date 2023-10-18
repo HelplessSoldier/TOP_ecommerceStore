@@ -6,7 +6,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { CartItem } from "./types";
 
 const initialCart: CartItem[] = [];
-const CartContext = createContext(initialCart);
+const CartContext = createContext<{
+  cart: CartItem[];
+  setCart: React.Dispatch<React.SetStateAction<CartItem[]>>
+}>({
+  cart: initialCart,
+  setCart: () => { },
+});
 
 const router = createBrowserRouter([
   {
@@ -24,7 +30,7 @@ const router = createBrowserRouter([
 ])
 
 export const App = () => {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState<CartItem[]>(initialCart);
 
   return (
     <React.StrictMode>
