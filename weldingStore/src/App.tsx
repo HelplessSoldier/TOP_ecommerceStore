@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { CartItem } from "./types";
 
 const initialCart: CartItem[] = [];
-const CartContext = createContext<{
+export const CartContext = createContext<{
   cart: CartItem[];
   setCart: React.Dispatch<React.SetStateAction<CartItem[]>>
 }>({

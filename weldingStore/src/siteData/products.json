@@ -1,0 +1,57 @@
+[
+  {
+    "id": "0001",
+    "name": "Flame Weaver Gloves",
+    "description": "Extreme heat and wear resistance gloves.",
+    "productDetails": {
+      "material": "Full-Grain leather with kevlar stitching",
+      "lining": "Cotton with AeroGel insulation",
+      "madeIn": "Italy"
+    },
+    "imgSrc": "./images/productImages/gloves.jpeg"
+  },
+  {
+    "id": "0002",
+    "name": "Blaze Bane Jacket",
+    "description": "Heavy leather jacket.",
+    "productDetails": {
+      "material": "Full-Grain leather with kevlar stitching",
+      "lining": "High threadcount cotton",
+      "madeIn": "Italy"
+    },
+    "imgSrc": "./images/productImages/jacket1.jpeg"
+  },
+  {
+    "id": "0003",
+    "name": "Blaze Bane Pants",
+    "description": "Heavy leather pants",
+    "productDetails": {
+      "material": "Full-Grain leather with kevlar stitching",
+      "lining": "High threadcount cotton",
+      "madeIn": "Italy"
+    },
+    "imgSrc": "./images/productImages/pants1.jpeg"
+  },
+  {
+    "id": "0004",
+    "name": "",
+    "description": "",
+    "productDetails": {
+      "material": "",
+      "lining": "",
+      "madeIn": "Italy"
+    },
+    "imgSrc": "./images/productImages/"
+  },
+  {
+    "id": "0005",
+    "name": "",
+    "description": "",
+    "productDetails": {
+      "material": "",
+      "lining": "",
+      "madeIn": "Italy"
+    },
+    "imgSrc": "./images/productImages/"
+  }
+]
