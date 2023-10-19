@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap');
+
+.headerBarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  width: 100vw;
+  height: 8vh;
+}
+
+.headerLogo {
+  text-align: center;
+  font-size: 55px;
+  font-family: "Roboto Condensed";
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+.userIcon,
+.cartIcon {
+  max-width: 26px;
+  max-height: 26px;
+}
+
+.userIcon {
+  margin-left: 10vw;
+}
+
+.cartIcon {
+  margin-right: 10vw;
+}

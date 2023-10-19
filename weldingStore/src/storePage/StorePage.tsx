@@ -1,10 +1,14 @@
 import "./StorePage.css";
 import { Products } from "./comps/Products";
+import { HeaderBar } from "../crossPageComps/HeaderBar";
 
 export function StorePage() {
   return (
-    <div className="productsContainer">
-      <Products />
-    </div>
+    <>
+      <HeaderBar />
+      <div className="productsContainer">
+        <Products />
+      </div>
+    </>
   )
 }

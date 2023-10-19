@@ -2,7 +2,7 @@ import { Product } from "../../types";
 import "./ProductPreviewItem.css";
 
 export function ProductPreviewItem(props: { product: Product }) {
-  const { name, description, productDetails, imgSrc } = props.product;
+  const { name, description, imgSrc, price } = props.product;
 
   return (
     <div className="productPreviewItem">
@@ -12,11 +12,7 @@ export function ProductPreviewItem(props: { product: Product }) {
       <div className="productDescContainer" >
         <h2>{name}</h2>
         <p>{description}</p>
-        <ul>
-          <li>Material: {productDetails.material}</li>
-          <li>Lining: {productDetails.lining}</li>
-          <li>Made in: {productDetails.madeIn}</li>
-        </ul>
+        <p className="productPrice">${price}</p>
       </div>
     </div>
   );

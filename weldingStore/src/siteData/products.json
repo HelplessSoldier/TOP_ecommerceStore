@@ -8,7 +8,8 @@
       "lining": "Cotton with AeroGel insulation",
       "madeIn": "Canada"
     },
-    "imgSrc": "./images/productImages/gloves.jpeg"
+    "imgSrc": "./images/productImages/gloves.jpeg",
+    "price": 885
   },
   {
     "id": "0002",
@@ -19,7 +20,8 @@
       "lining": "High threadcount cotton",
       "madeIn": "Italy"
     },
-    "imgSrc": "./images/productImages/jacket.jpeg"
+    "imgSrc": "./images/productImages/jacket.jpeg",
+    "price": 4275
   },
   {
     "id": "0003",
@@ -30,7 +32,8 @@
       "lining": "High threadcount cotton",
       "madeIn": "Italy"
     },
-    "imgSrc": "./images/productImages/pants.jpeg"
+    "imgSrc": "./images/productImages/pants.jpeg",
+    "price": 3500
   },
   {
     "id": "0004",
@@ -41,7 +44,8 @@
       "lining": "Suede padding",
       "madeIn": "Canada"
     },
-    "imgSrc": "./images/productImages/mask.jpeg"
+    "imgSrc": "./images/productImages/mask.jpeg",
+    "price": 2100
   },
   {
     "id": "0005",
@@ -52,6 +56,7 @@
       "lining": "Leather",
       "madeIn": "Italy"
     },
-    "imgSrc": "./images/productImages/boots.jpeg"
+    "imgSrc": "./images/productImages/boots.jpeg",
+    "price": 5670
   }
 ]

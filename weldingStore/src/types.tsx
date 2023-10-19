@@ -14,4 +14,5 @@ export type Product = {
     madeIn: string;
   }
   imgSrc: string;
+  price: number;
 }
