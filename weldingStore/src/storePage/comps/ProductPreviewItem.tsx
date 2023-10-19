@@ -1,14 +1,4 @@
-export type Product = {
-  id: string;
-  name: string;
-  description: string;
-  productDetails: {
-    material: string;
-    lining: string;
-    madeIn: string;
-  }
-  imgSrc: string;
-}
+import { Product } from "../../types";
 
 export function ProductPreviewItem(props: { product: Product }) {
   const { id, name, description, productDetails, imgSrc } = props.product;
@@ -16,7 +6,7 @@ export function ProductPreviewItem(props: { product: Product }) {
   return (
     <div className="productPreviewItem">
       <img src={imgSrc} />
-      <h1>{name}</h1>
+      <h2>{name}</h2>
       <p>{description}</p>
       <ul>
         <li>Material: {productDetails.material}</li>

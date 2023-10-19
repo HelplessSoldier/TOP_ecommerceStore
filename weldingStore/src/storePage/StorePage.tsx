@@ -1,5 +1,6 @@
 import products from "../siteData/products.json"
-import { Product, ProductPreviewItem } from "./comps/ProductPreviewItem"
+import { ProductPreviewItem } from "./comps/ProductPreviewItem"
+import { Product } from "../types"
 
 export function StorePage() {
   return (
@@ -7,7 +8,6 @@ export function StorePage() {
       {products.map((product: Product) => (
         <ProductPreviewItem key={product.id} product={product} />
       ))}
-      <p>hello from the store page!</p>
     </>
   )
 }
