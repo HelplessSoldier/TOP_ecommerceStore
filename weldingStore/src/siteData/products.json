@@ -19,7 +19,7 @@
       "lining": "High threadcount cotton",
       "madeIn": "Italy"
     },
-    "imgSrc": "./images/productImages/jacket1.jpeg"
+    "imgSrc": "./images/productImages/jacket.jpeg"
   },
   {
     "id": "0003",
@@ -30,7 +30,7 @@
       "lining": "High threadcount cotton",
       "madeIn": "Italy"
     },
-    "imgSrc": "./images/productImages/pants1.jpeg"
+    "imgSrc": "./images/productImages/pants.jpeg"
   },
   {
     "id": "0004",
@@ -41,7 +41,7 @@
       "lining": "Suede padding",
       "madeIn": "Canada"
     },
-    "imgSrc": "./images/productImages/mask1.jpeg"
+    "imgSrc": "./images/productImages/mask.jpeg"
   },
   {
     "id": "0005",
@@ -52,6 +52,6 @@
       "lining": "Leather",
       "madeIn": "Italy"
     },
-    "imgSrc": "./images/productImages/boots2.jpeg"
+    "imgSrc": "./images/productImages/boots.jpeg"
   }
 ]
