@@ -1,0 +1,18 @@
+.productPreviewItem {
+  display: flex;
+  border: 1px solid orange;
+  height: 34vw;
+  width: 55vw;
+}
+
+.productImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productImage {
+  width: 89%;
+  height: 89%;
+  object-fit: cover;
+}
