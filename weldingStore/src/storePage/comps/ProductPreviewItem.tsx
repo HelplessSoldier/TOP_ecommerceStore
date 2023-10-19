@@ -1,7 +1,7 @@
 import { Product } from "../../types";
 
 export function ProductPreviewItem(props: { product: Product }) {
-  const { id, name, description, productDetails, imgSrc } = props.product;
+  const { name, description, productDetails, imgSrc } = props.product;
 
   return (
     <div className="productPreviewItem">
