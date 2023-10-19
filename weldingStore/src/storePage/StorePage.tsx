@@ -1,13 +1,10 @@
-import products from "../siteData/products.json"
-import { ProductPreviewItem } from "./comps/ProductPreviewItem"
-import { Product } from "../types"
+import "./StorePage.css";
+import { Products } from "./comps/Products";
 
 export function StorePage() {
   return (
-    <>
-      {products.map((product: Product) => (
-        <ProductPreviewItem key={product.id} product={product} />
-      ))}
-    </>
+    <div className="productsContainer">
+      <Products />
+    </div>
   )
 }

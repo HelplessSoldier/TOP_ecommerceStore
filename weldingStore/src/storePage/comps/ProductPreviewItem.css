@@ -1,8 +1,9 @@
 .productPreviewItem {
   display: flex;
+  flex-direction: column;
   border: 1px solid orange;
   height: 34vw;
-  width: 55vw;
+  width: 21vw;
 }
 
 .productImageContainer {
@@ -12,7 +13,11 @@
 }
 
 .productImage {
-  width: 89%;
-  height: 89%;
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.productDescContainer {
+  border: 1px solid orange;
 }

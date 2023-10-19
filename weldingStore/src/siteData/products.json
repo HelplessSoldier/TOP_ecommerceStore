@@ -12,7 +12,7 @@
   },
   {
     "id": "0002",
-    "name": "Blaze Bane Jacket",
+    "name": "Blaze Bane",
     "description": "Heavy leather jacket.",
     "productDetails": {
       "material": "Full-Grain leather with kevlar stitching",
@@ -23,7 +23,7 @@
   },
   {
     "id": "0003",
-    "name": "Blaze Bane Pants",
+    "name": "Blaze Bane",
     "description": "Heavy leather pants",
     "productDetails": {
       "material": "Full-Grain leather with kevlar stitching",

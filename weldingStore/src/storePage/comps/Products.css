@@ -1,0 +1,10 @@
+.productsPreviewContainer {
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  gap: 21px;
+  width: 89vw;
+  justify-content: center;
+  align-items: center;
+}
