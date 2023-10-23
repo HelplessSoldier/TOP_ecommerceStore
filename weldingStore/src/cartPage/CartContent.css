@@ -1,0 +1,19 @@
+.cartContentContainer {
+  justify-self: center;
+  align-self: center;
+  width: 89vw;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.cartContentItem {
+  max-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cartImage {
+  max-width: 10px;
+  height: auto;
+}

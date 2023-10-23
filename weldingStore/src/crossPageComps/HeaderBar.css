@@ -14,7 +14,7 @@
 
 .headerLogo {
   text-align: center;
-  font-size: 55px;
+  font-size: 8vh;
   font-family: "Roboto Condensed";
   letter-spacing: 5px;
   cursor: pointer;
@@ -23,8 +23,8 @@
 .userIcon,
 .cartIcon {
   cursor: pointer;
-  max-width: 26px;
-  max-height: 26px;
+  max-width: 4vh;
+  max-height: 4vh;
 }
 
 .userIcon {
