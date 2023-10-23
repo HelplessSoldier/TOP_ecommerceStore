@@ -1,7 +1,11 @@
+import { HeaderBar } from "../crossPageComps/HeaderBar";
+import { CartContent } from "./CartContent";
+
 export function CartPage() {
   return (
     <>
-      <p>hello from the cart page!</p>
+      <HeaderBar />
+      <CartContent />
     </>
   )
 }
