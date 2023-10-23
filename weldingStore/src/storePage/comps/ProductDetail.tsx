@@ -1,11 +1,20 @@
 import "./ProductDetail.css";
 import { Product } from "../../types";
+import { useContext } from "react";
+import { CartContext } from "../../App";
 
 interface ProductDetailProps {
   product: Product;
 }
 
 export function ProductDetail(props: ProductDetailProps) {
+  const { cart, setCart } = useContext(CartContext);
+
+  const handleAddToCartButton = () => {
+    const newCart: Product[] = [...cart, props.product];
+    setCart(newCart);
+  }
+
   return (
     <div className="productDetailContainer">
       <img
@@ -23,6 +32,7 @@ export function ProductDetail(props: ProductDetailProps) {
         </div>
         <button
           className="addToCartButton"
+          onClick={handleAddToCartButton}
         >Add to cart</button>
       </div>
     </div>

@@ -3,12 +3,12 @@ import { LandingPage } from "./landingPage/LandingPage";
 import { StorePage } from "./storePage/StorePage";
 import { CartPage } from "./cartPage/CartPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { CartItem } from "./types";
+import { Product } from "./types";
 
-const initialCart: CartItem[] = [];
+const initialCart: Product[] = [];
 export const CartContext = createContext<{
-  cart: CartItem[];
-  setCart: React.Dispatch<React.SetStateAction<CartItem[]>>
+  cart: Product[];
+  setCart: React.Dispatch<React.SetStateAction<Product[]>>
 }>({
   cart: initialCart,
   setCart: () => { },
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
 ])
 
 export const App = () => {
-  const [cart, setCart] = useState<CartItem[]>(initialCart);
+  const [cart, setCart] = useState<Product[]>(initialCart);
 
   return (
     <React.StrictMode>
