@@ -1,0 +1,18 @@
+.cartIconContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.cartCounter {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  text-align: center;
+  width: 21px;
+  height: 21px;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+}

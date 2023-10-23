@@ -1,15 +1,12 @@
 import { useNavigate } from "react-router-dom"
 import "./HeaderBar.css"
+import { CartIcon } from "./headerBarSubComps/CartIcon";
 
 export function HeaderBar() {
   const navigate = useNavigate();
 
   const handleLogoClick = () => {
     navigate("/");
-  }
-
-  const handleCartClick = () => {
-    navigate("/cart")
   }
 
   return (
@@ -20,11 +17,7 @@ export function HeaderBar() {
       <h1
         className="headerLogo"
         onClick={handleLogoClick}>SPRK</h1>
-      <img
-        className="cartIcon"
-        src="./images/icons/cart-shopping-svgrepo-com.svg"
-        onClick={handleCartClick}
-      />
+      <CartIcon />
     </div>
   )
 }

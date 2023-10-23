@@ -1,9 +1,9 @@
 .productDetailContainer {
   margin-top: 8vh;
-  margin-left: 13vw;
-  margin-right: 13vw;
+  margin-left: 21vw;
+  margin-right: 21vw;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 2fr ;
   justify-self: center;
   align-self: center;
 }
@@ -15,4 +15,31 @@
 
 .productDetailTextBlock > * {
   margin: 3vh;
+}
+
+.productDetailsAndBuyButtonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.addToCartButton {
+  font-size: 16px;
+  margin-left: 3vh;
+  margin-right: 3vh;
+  color: white;
+  background-color: black;
+  border-radius: 0;
+  transition: background-color .34s ease;
+  border: none;
+  outline: none;
+  height: 10vh;
+}
+
+.addToCartButton:hover {
+  background-color: blue;
+}
+
+.qtyAndCartContainer {
+  width: 100%;
 }
