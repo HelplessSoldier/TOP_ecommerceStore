@@ -1,0 +1,18 @@
+.productDetailContainer {
+  margin-top: 8vh;
+  margin-left: 13vw;
+  margin-right: 13vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: center;
+  align-self: center;
+}
+
+.productDetailImages {
+  max-width: 100%;
+  height: auto;
+}
+
+.productDetailTextBlock > * {
+  margin: 3vh;
+}

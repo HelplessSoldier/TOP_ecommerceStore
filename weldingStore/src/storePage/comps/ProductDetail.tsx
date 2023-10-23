@@ -1,7 +1,26 @@
+import "./ProductDetail.css";
 import { Product } from "../../types";
 
-export function ProductDetail(product: Product) {
+interface ProductDetailProps {
+  product: Product;
+}
+
+export function ProductDetail(props: ProductDetailProps) {
   return (
-    <h1>hi from the productDetail comp!</h1>
+    <div className="productDetailContainer">
+      <img
+        src={props.product.imgSrc}
+        className="productDetailImages"
+      />
+      <div className="productDetailTextBlock">
+        <h2>{props.product.name}</h2>
+        <hr />
+        <p>Material: {props.product.productDetails.material}</p>
+        <p>Lining: {props.product.productDetails.lining}</p>
+        <p>Made In: {props.product.productDetails.madeIn}</p>
+        <p><b>${props.product.price}</b></p>
+      </div>
+    </div>
   )
 }
+
