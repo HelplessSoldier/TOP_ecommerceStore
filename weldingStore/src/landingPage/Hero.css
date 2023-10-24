@@ -5,10 +5,14 @@
   background-size: cover;
   background-attachment: fixed; 
   background-position: 0px 0vw;
+  padding-left: 10vw;
+  padding-top: 10vw;
 }
 
 .heroHeader {
-  padding-left: 10vw;
-  padding-top: 10vw;
+  padding-bottom: 10px;
+}
+
+.heroContainer > * {
   color: white;
 }
