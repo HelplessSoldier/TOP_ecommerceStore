@@ -10,14 +10,12 @@ export function CartPage() {
   const { cart } = useContext(CartContext);
 
   const navigate = useNavigate();
-
   useEffect(() => {
     const handleBackButton = () => {
       navigate('/store')
     }
     window.addEventListener('popstate', handleBackButton);
   }, [navigate])
-
 
   return (
     <>
