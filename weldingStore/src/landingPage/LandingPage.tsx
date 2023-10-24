@@ -1,9 +1,7 @@
-import { useContext } from "react"
-import { CartContext } from "../App"
 import { useNavigate } from "react-router-dom";
+import { HeaderBar } from "../crossPageComps/HeaderBar";
 
 export function LandingPage() {
-  const { cart, setCart } = useContext(CartContext);
   const navigate = useNavigate();
 
   const handleStoreLinkClick = () => {
@@ -12,8 +10,8 @@ export function LandingPage() {
 
   return (
     <>
-      <p>hello from the landing page!</p>
-      <p onClick={handleStoreLinkClick}>temp store link here</p>
+      <HeaderBar />
+
     </>
   )
 }
