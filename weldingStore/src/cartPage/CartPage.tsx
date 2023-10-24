@@ -5,7 +5,14 @@ export function CartPage() {
   return (
     <>
       <HeaderBar />
-      <CartContent />
+      <div style={{
+        display: "flex",
+        width: "100vw",
+        alignItems: "center",
+        justifyContent: "center"
+      }}>
+        <CartContent />
+      </div>
     </>
   )
 }
