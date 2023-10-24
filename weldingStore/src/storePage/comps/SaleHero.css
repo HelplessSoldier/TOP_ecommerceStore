@@ -10,7 +10,7 @@
 
 .saleHeroContainer::before {
   content: "";
-  background-image: url('./images/heroImages/hero3_upscayl_3x_realesrgan-x4plus.png');
+  background-image: url('./images/heroImages/saleHero.png');
   background-size: cover;
   background-attachment: fixed; 
   background-position: 0px -13vw;
