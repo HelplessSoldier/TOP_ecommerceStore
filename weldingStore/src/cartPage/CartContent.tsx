@@ -3,16 +3,21 @@ import { useContext } from "react"
 import { CartContext } from "../App"
 import { QuantitySelector } from "./QuantitySelector";
 import { Product } from "../types";
+import products from "../siteData/products.json";
 
 export function CartContent() {
   const { cart } = useContext(CartContext);
 
   const getPriceSum = () => {
     let sum: number = 0;
+    let multi: number = 1;
     for (const item of cart) {
       sum += item.price;
     }
-    return sum;
+    if (hasFullSet(cart)) {
+      multi = 0.9;
+    }
+    return sum * multi;
   }
 
   const getFilteredCart = () => {
@@ -22,7 +27,7 @@ export function CartContent() {
         filteredCart.push(item);
       }
     }
-    return filteredCart;
+    return filteredCart.sort((a, b) => (a.id > b.id) ? 1 : -1);
   }
 
   return (
@@ -40,8 +45,27 @@ export function CartContent() {
         })}
       </div>
       <div className="checkoutInfoContainer">
-        <p>Total: {getPriceSum()}</p>
+        <p>Total: {getPriceSum()}
+          <span className="discountText">{hasFullSet(cart) ? "   -10%" : null}</span>
+        </p>
       </div>
     </div>
   )
+}
+
+interface SeenObject {
+  [key: string]: number;
+}
+
+function hasFullSet(cart: Product[]) {
+  const productCount: number = products.length;
+  let cartCount: number = 0;
+  const seen: SeenObject = {}
+  for (const item of cart) {
+    if (!seen[item.id]) {
+      seen[item.id] = 1;
+      cartCount++;
+    }
+  }
+  return (cartCount === productCount);
 }
