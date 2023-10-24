@@ -1,12 +1,14 @@
 import "./CartContent.css"
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { CartContext } from "../App"
 import { QuantitySelector } from "./QuantitySelector";
 import { Product } from "../types";
+import { EndPage } from "./EndPage";
 import products from "../siteData/products.json";
 
 export function CartContent() {
   const { cart } = useContext(CartContext);
+  const [checkoutClicked, setCheckoutClicked] = useState(false)
 
   const getPriceSum = () => {
     let sum: number = 0;
@@ -30,27 +32,43 @@ export function CartContent() {
     return filteredCart.sort((a, b) => (a.id > b.id) ? 1 : -1);
   }
 
-  return (
-    <div className="cartContainer">
-      <div className="cartContentContainer" >
-        {getFilteredCart().map((item) => {
-          return (
-            <div className="cartContentItem">
-              <img className="cartImage" src={item.imgSrc} />
-              <p>{item.name}</p>
-              <p>${item.price}</p>
-              <QuantitySelector product={item} />
-            </div>
-          )
-        })}
+  const handleCheckoutClick = () => {
+    setCheckoutClicked(true);
+  }
+
+  if (!checkoutClicked) {
+    return (
+      <div className="cartContainer">
+        <div className="cartContentContainer" >
+          {getFilteredCart().map((item) => {
+            return (
+              <div className="cartContentItem">
+                <img className="cartImage" src={item.imgSrc} />
+                <p>{item.name}</p>
+                <p>${item.price}</p>
+                <QuantitySelector product={item} />
+              </div>
+            )
+          })}
+        </div>
+        <div className="checkoutInfoContainer">
+          <p>Total:  ${getPriceSum()}
+            <span className="discountText">
+              {hasFullSet(cart) ? "-10% applied!" : null}
+            </span>
+          </p>
+          <button
+            className="checkoutButton"
+            onClick={() => handleCheckoutClick()}
+          >
+            Checkout
+          </button>
+        </div>
       </div>
-      <div className="checkoutInfoContainer">
-        <p>Total: {getPriceSum()}
-          <span className="discountText">{hasFullSet(cart) ? "   -10%" : null}</span>
-        </p>
-      </div>
-    </div>
-  )
+    )
+  } else {
+    return <EndPage />
+  }
 }
 
 interface SeenObject {

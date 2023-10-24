@@ -1,0 +1,7 @@
+.endPageContainer {
+  margin: 55px;
+}
+
+.endPageContainer > h1 {
+  text-align: center;
+}

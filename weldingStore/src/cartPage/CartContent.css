@@ -32,7 +32,16 @@
 }
 
 .checkoutInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   color: black;
+  height: 55%;
+}
+
+.checkoutInfoContainer > p {
+  font-size: 18px;
+  margin-bottom: 13px;
 }
 
 .cartContentItem p:first-child {
@@ -43,3 +52,19 @@
   color: green;
   margin-left: 10px;
 }
+
+.checkoutButton {
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  border-radius: 0;
+  transition: background-color .34s ease;
+  border: none;
+  outline: none;
+  height: 10vh;
+}
+
+.checkoutButton:hover {
+  background-color: blue;
+}
+
