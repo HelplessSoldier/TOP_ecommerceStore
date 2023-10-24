@@ -1,5 +1,6 @@
-import { useContext } from "react"
-import { CartContext } from "../App"
+import "./QuantitySelector.css";
+import { useContext } from "react";
+import { CartContext } from "../App";
 import { Product } from "../types";
 
 interface QuantitySelectorProps {
@@ -19,20 +20,39 @@ export function QuantitySelector(props: QuantitySelectorProps) {
     return sum;
   }
 
-  const handleQtyDown = (item: Product) => {
-    return;
+  const handleQtyDown = (itemToRemove: Product) => {
+    let removed: boolean = false;
+    const newCart: Product[] = [];
+    for (const product of cart) {
+      if (!removed && product.id === itemToRemove.id) {
+        removed = true;
+        continue;
+      }
+      newCart.push(product);
+    }
+    setCart(newCart);
   }
 
-  const handleQtyUp = (item: Product) => {
-    return;
+  const handleQtyUp = (itemToAdd: Product) => {
+    const newCart: Product[] = [...cart, itemToAdd];
+    setCart(newCart);
   }
 
   return (
     <div className="qtySelectorContainer">
-      <button className="qtySelectorButtons">
-      </button>
+      <img
+        className="qtySelectorIcons"
+        src="./images/icons/up-arrow-svgrepo-com.svg"
+        alt="quantity up arrow"
+        onClick={() => handleQtyUp(props.product)}
+      />
       <p>{getQty(props.product)}</p>
-      <button className="qtySelectorButtons" />
+      <img
+        className="qtySelectorIcons"
+        src="./images/icons/down-arrow-svgrepo-com.svg"
+        alt="quantity down arrow"
+        onClick={() => handleQtyDown(props.product)}
+      />
     </div>
   )
 }

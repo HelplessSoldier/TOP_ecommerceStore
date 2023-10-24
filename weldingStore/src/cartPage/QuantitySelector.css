@@ -1,0 +1,13 @@
+.qtySelectorContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.qtySelectorIcons {
+  max-width: 21px;
+  cursor: pointer;
+  height: auto;
+}
+
