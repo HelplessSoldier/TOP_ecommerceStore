@@ -1,0 +1,14 @@
+.heroContainer {
+  width: 100vw;
+  height: 55vw;
+  background-image: url('./images/heroImages/landinghero.png');
+  background-size: cover;
+  background-attachment: fixed; 
+  background-position: 0px 0vw;
+}
+
+.heroHeader {
+  padding-left: 10vw;
+  padding-top: 10vw;
+  color: white;
+}

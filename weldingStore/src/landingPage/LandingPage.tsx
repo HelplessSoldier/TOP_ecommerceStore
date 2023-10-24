@@ -1,17 +1,11 @@
-import { useNavigate } from "react-router-dom";
 import { HeaderBar } from "../crossPageComps/HeaderBar";
+import { Hero } from "./Hero";
 
 export function LandingPage() {
-  const navigate = useNavigate();
-
-  const handleStoreLinkClick = () => {
-    navigate("/store")
-  }
-
   return (
     <>
       <HeaderBar />
-
+      <Hero />
     </>
   )
 }
