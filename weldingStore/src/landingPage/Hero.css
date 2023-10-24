@@ -16,3 +16,11 @@
 .heroContainer > * {
   color: white;
 }
+
+.shopNowButton {
+  color: black;
+  width: 8vw;
+  height: 3vw;
+  font-size: 21px;
+}
+
