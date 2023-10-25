@@ -68,3 +68,21 @@
   background-color: blue;
 }
 
+@media (max-width: 767px) {
+  .cartContainer {
+    display: flex;
+    flex-direction: column;
+    width: 89vw;
+    height: 80vh;
+  }
+  .cartContentContainer {
+    height: 55vh;
+  }
+  .cartImage {
+    max-width: 21vw;
+  }
+  .checkoutInfoContainer {
+    justify-content: flex-start;
+    height: auto;
+  }
+}
