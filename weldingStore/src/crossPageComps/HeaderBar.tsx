@@ -5,10 +5,6 @@ import { CartIcon } from "./headerBarSubComps/CartIcon";
 export function HeaderBar() {
   const navigate = useNavigate();
 
-  const handleLogoClick = () => {
-    navigate("/");
-  }
-
   return (
     <div className="headerBarContainer">
       <img
@@ -16,7 +12,7 @@ export function HeaderBar() {
         src="./images/icons/user-svgrepo-com.svg" />
       <h1
         className="headerLogo"
-        onClick={handleLogoClick}>SPRK</h1>
+        onClick={() => navigate("/")}>SPRK</h1>
       <CartIcon />
     </div>
   )
